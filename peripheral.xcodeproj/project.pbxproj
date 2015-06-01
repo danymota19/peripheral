@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		65D8CC0F1B1BD127002D7180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8CC0E1B1BD127002D7180 /* main.m */; };
 		65D8CC121B1BD127002D7180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8CC111B1BD127002D7180 /* AppDelegate.m */; };
-		65D8CC151B1BD127002D7180 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8CC141B1BD127002D7180 /* ViewController.m */; };
+		65D8CC151B1BD127002D7180 /* Peripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8CC141B1BD127002D7180 /* Peripheral.m */; };
 		65D8CC181B1BD127002D7180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D8CC161B1BD127002D7180 /* Main.storyboard */; };
 		65D8CC1A1B1BD127002D7180 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D8CC191B1BD127002D7180 /* Images.xcassets */; };
 		65D8CC1D1B1BD127002D7180 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D8CC1B1B1BD127002D7180 /* LaunchScreen.xib */; };
 		65D8CC291B1BD127002D7180 /* peripheralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8CC281B1BD127002D7180 /* peripheralTests.m */; };
+		65D8CC331B1BD35D002D7180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D8CC321B1BD35D002D7180 /* Foundation.framework */; };
+		65D8CC351B1BD366002D7180 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D8CC341B1BD366002D7180 /* CoreGraphics.framework */; };
+		65D8CC371B1BD36E002D7180 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D8CC361B1BD36E002D7180 /* CoreBluetooth.framework */; };
+		65D8CC3E1B1BD421002D7180 /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D8CC3D1B1BD421002D7180 /* Declarations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,19 @@
 		65D8CC0E1B1BD127002D7180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65D8CC101B1BD127002D7180 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65D8CC111B1BD127002D7180 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		65D8CC131B1BD127002D7180 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		65D8CC141B1BD127002D7180 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		65D8CC131B1BD127002D7180 /* Peripheral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Peripheral.h; sourceTree = "<group>"; };
+		65D8CC141B1BD127002D7180 /* Peripheral.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Peripheral.m; sourceTree = "<group>"; };
 		65D8CC171B1BD127002D7180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65D8CC191B1BD127002D7180 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65D8CC1C1B1BD127002D7180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		65D8CC221B1BD127002D7180 /* peripheralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = peripheralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D8CC271B1BD127002D7180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65D8CC281B1BD127002D7180 /* peripheralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = peripheralTests.m; sourceTree = "<group>"; };
+		65D8CC321B1BD35D002D7180 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65D8CC341B1BD366002D7180 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65D8CC361B1BD36E002D7180 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		65D8CC3C1B1BD421002D7180 /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		65D8CC3D1B1BD421002D7180 /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D8CC371B1BD36E002D7180 /* CoreBluetooth.framework in Frameworks */,
+				65D8CC351B1BD366002D7180 /* CoreGraphics.framework in Frameworks */,
+				65D8CC331B1BD35D002D7180 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,9 @@
 		65D8CC001B1BD127002D7180 = {
 			isa = PBXGroup;
 			children = (
+				65D8CC361B1BD36E002D7180 /* CoreBluetooth.framework */,
+				65D8CC341B1BD366002D7180 /* CoreGraphics.framework */,
+				65D8CC321B1BD35D002D7180 /* Foundation.framework */,
 				65D8CC0B1B1BD127002D7180 /* peripheral */,
 				65D8CC251B1BD127002D7180 /* peripheralTests */,
 				65D8CC0A1B1BD127002D7180 /* Products */,
@@ -81,10 +96,11 @@
 		65D8CC0B1B1BD127002D7180 /* peripheral */ = {
 			isa = PBXGroup;
 			children = (
+				65D8CC3B1B1BD3D3002D7180 /* main */,
 				65D8CC101B1BD127002D7180 /* AppDelegate.h */,
 				65D8CC111B1BD127002D7180 /* AppDelegate.m */,
-				65D8CC131B1BD127002D7180 /* ViewController.h */,
-				65D8CC141B1BD127002D7180 /* ViewController.m */,
+				65D8CC131B1BD127002D7180 /* Peripheral.h */,
+				65D8CC141B1BD127002D7180 /* Peripheral.m */,
 				65D8CC161B1BD127002D7180 /* Main.storyboard */,
 				65D8CC191B1BD127002D7180 /* Images.xcassets */,
 				65D8CC1B1B1BD127002D7180 /* LaunchScreen.xib */,
@@ -117,6 +133,15 @@
 				65D8CC271B1BD127002D7180 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65D8CC3B1B1BD3D3002D7180 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				65D8CC3C1B1BD421002D7180 /* Declarations.h */,
+				65D8CC3D1B1BD421002D7180 /* Declarations.m */,
+			);
+			name = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65D8CC151B1BD127002D7180 /* ViewController.m in Sources */,
+				65D8CC151B1BD127002D7180 /* Peripheral.m in Sources */,
 				65D8CC121B1BD127002D7180 /* AppDelegate.m in Sources */,
+				65D8CC3E1B1BD421002D7180 /* Declarations.m in Sources */,
 				65D8CC0F1B1BD127002D7180 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
