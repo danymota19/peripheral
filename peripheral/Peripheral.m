@@ -85,8 +85,11 @@ NSString *selectedOption;
 - (void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didSubscribeToCharacteristic:(CBCharacteristic *)characteristic
 {
     NSLog(@"Central subscribed to characteristic");
+    
+    NSString *texto = [self.txtBT.text stringByAppendingString:selectedOption];
+    
     // Get the data
-    self.dataToSend         = [(self.txtBT.text,selectedOption) dataUsingEncoding:NSUTF8StringEncoding];
+    self.dataToSend         = [texto dataUsingEncoding:NSUTF8StringEncoding];
 
     // Reset the index
     self.sendDataIndex      = 0;
