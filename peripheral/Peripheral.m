@@ -38,19 +38,6 @@ NSString *selectedOption;
 }
 
 /**********************************************************************************************/
-#pragma mark - Buttons functions
-/**********************************************************************************************/
-
-- (IBAction)btnSendBTPressed:(id)sender
-{
-    NSLog(@"btnSendBTPressed");
-    // All we advertise is our service's UUID
-    if (self.switchF.isOn || self.switchT.isOn ||self.switchC.isOn ) {
-        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
-    }
-    
-}
-/**********************************************************************************************/
 #pragma mark - Peripheral Methods
 /**********************************************************************************************/
 /** Required protocol method.  A full app should take care of all the possible states,
@@ -194,11 +181,6 @@ NSString *selectedOption;
     }
 }
 
-- (IBAction)swtFacebook:(id)sender {
-    [self.switchC setOn:NO animated:YES];
-    [self.switchT setOn:NO animated:YES];
-    selectedOption= @"$Facebook";
-}
 
 - (IBAction)swtTwitter:(id)sender {
     [self.switchC setOn:NO animated:YES];
@@ -212,5 +194,18 @@ NSString *selectedOption;
     selectedOption= @"$Correo";
 }
 
+- (IBAction)swtFacebook:(id)sender {
+    [self.switchC setOn:NO animated:YES];
+    [self.switchT setOn:NO animated:YES];
+    selectedOption= @"$Facebook";
+}
 
+
+- (IBAction)btnSendBTPressed:(id)sender {
+    NSLog(@"btnSendBTPressed");
+    // All we advertise is our service's UUID
+    if (self.switchF.isOn || self.switchT.isOn ||self.switchC.isOn ) {
+        [self.peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:TRANSFER_SERVICE_UUID]] }];
+    }
+}
 @end

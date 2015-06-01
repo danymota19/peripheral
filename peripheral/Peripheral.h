@@ -22,12 +22,15 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtBT;
 
 //Actions
+
 - (IBAction)btnSendBTPressed:(id)sender;
 
+
 //switch
-- (IBAction)swtFacebook:(id)sender;
+
 - (IBAction)swtTwitter:(id)sender;
 - (IBAction)swtCorreo:(id)sender;
+- (IBAction)swtFacebook:(id)sender;
 
 //outlet
 

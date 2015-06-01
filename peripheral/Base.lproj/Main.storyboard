@@ -45,10 +45,16 @@
                                 <state key="normal" title="Enviar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSendBTPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDR-gq-qgO"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Z2z-dq-eHn" userLabel="SwitchFace">
                                 <rect key="frame" x="177" y="190" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <action selector="swtFacebook:" destination="BYZ-38-t0r" eventType="valueChanged" id="yp5-2Y-Dgk"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Lfa-ZK-Z3k" userLabel="SwitchTwitter">
                                 <rect key="frame" x="177" y="252" width="51" height="31"/>
